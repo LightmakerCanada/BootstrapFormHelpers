@@ -121,8 +121,8 @@
 
       var found = false;
       for (var i in BFHStatesList[country]) {
-          if (i.code == value) {
-              $toggle.html(i.name);
+          if (BFHStatesList[country][i].code == value) {
+              $toggle.html(BFHStatesList[country][i].name);
               found = true;
               break;
           }
