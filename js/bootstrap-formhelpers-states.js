@@ -118,10 +118,17 @@
       }
       
       $toggle.data('option', value)
-      if (typeof BFHStatesList[country][value] == "undefined") {
+
+      var found = false;
+      for (var i in BFHStatesList[country]) {
+          if (i.code == value) {
+              $toggle.html(i.name);
+              found = true;
+              break;
+          }
+      }
+      if (!found) {
         $toggle.html('')
-      } else {
-        $toggle.html(BFHStatesList[country][value])
       }
       
       $input.val(value)
