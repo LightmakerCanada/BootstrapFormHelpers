@@ -1,3 +1,10 @@
 .DS_Store
 nbproject/*
 node_modules
+.idea/.name
+.idea/BootstrapFormHelpers.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/workspace.xml
